@@ -17,7 +17,7 @@ def support(update: Update, context: CallbackContext):
         "Dogbot on Solana is developed and overseen by the DumbMoney/GME team.\n"
         "- @VisionMark (CEO)\n"
         "- @RaymondMontreal (Project Manager)\n"
-        "- @idioRusty (Developer)\n"
+        "- @harryjoss (Developer)\n"
         "- @CRYPTO_PECKERWOOD (Marketing)\n"
         "- @CryptoKrusty (Operations Technician)\n"
         "- @Dumb_Money_Savage (Chart Analysis Expert)\n\n"
@@ -31,7 +31,7 @@ def support(update: Update, context: CallbackContext):
         ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
-    
+
     try:
         context.bot.edit_message_text(chat_id=chat_id, message_id=message_id, text=message, reply_markup=reply_markup, parse_mode=ParseMode.HTML)
     except:
